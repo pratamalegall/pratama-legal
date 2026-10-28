@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRATAMA LEGAL - Jasa Perizinan Jabodetabek</title>
+<style>
+:root{--g1:#0f3d3a;--g2:#17574f;--g3:#e8f1ee;--gold:#e0a82e;--wa:#1fa855;--bg:#f5f7f6;--tx:#1b2b29;--mut:#66787a;--bd:#dbe5e2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--tx);font-size:14.5px;line-height:1.55}
+h1,h2,h3,.serif{font-family:Georgia,'Noto Serif','Times New Roman',serif}
+header{background:var(--g1);position:sticky;top:0;z-index:40;box-shadow:0 2px 10px #0004}
+.wrap{max-width:980px;margin:auto;padding:0 14px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:10px 0 4px}
+.logo{font-family:Georgia,serif;font-weight:800;font-size:20px;color:#fff;letter-spacing:.5px;cursor:pointer}.logo b{color:var(--gold)}
+.me{color:#bfe0d8;font-size:12px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:6px 0 10px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}
+nav button{flex:none;background:#ffffff12;color:#e9f4f1;border:1px solid #ffffff2e;border-radius:8px;padding:6px 12px;font-size:13px;cursor:pointer;white-space:nowrap}
+nav button.on{background:var(--gold);color:#1b1b1b;border-color:var(--gold);font-weight:700}
+main{max-width:980px;margin:auto;padding:14px}
+.back{margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:0;border-radius:10px;padding:9px 15px;font-size:13.5px;font-weight:600;cursor:pointer;text-decoration:none;background:var(--g1);color:#fff;transition:.15s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.btn.gold{background:var(--gold);color:#1b1b1b}.btn.wa{background:var(--wa)}.btn.mail{background:#c0392b}.btn.white{background:#fff;color:var(--g1);border:1px solid #fff}.btn.line{background:#fff;color:var(--g1);border:1px solid var(--g1)}.btn.sm{padding:6px 11px;font-size:12px;border-radius:8px}
+.hero{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border-radius:18px;padding:26px 22px;display:grid;grid-template-columns:1.2fr 1fr;gap:12px;align-items:center;overflow:hidden}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding:22px 18px}.hero svg{max-width:300px;margin:auto}}
+.hello{display:inline-block;background:#ffffff1c;border:1px solid #ffffff33;border-radius:20px;padding:4px 13px;font-size:13px;margin-bottom:12px}
+.hero h1{font-size:clamp(26px,5vw,38px);line-height:1.18;margin-bottom:12px}
+.hero p{color:#cfe6e0;margin-bottom:16px;font-size:15px}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.sec{margin-top:26px}.sec h2{font-size:22px;color:var(--g1);margin-bottom:4px}.sec .sub{color:var(--mut);margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px;text-align:center}.stat b{display:block;font-size:22px;color:var(--g2);font-family:Georgia,serif}.stat span{color:var(--mut);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px}
+.card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:14px}
+.sv{cursor:pointer;transition:.18s}.sv:hover{transform:translateY(-3px);box-shadow:0 8px 20px #0f3d3a22;border-color:var(--g2)}
+.ic{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:9px;background:var(--g3)}
+.sv h3{font-size:15px;color:var(--g1);margin-bottom:3px}.mut{color:var(--mut);font-size:12.5px}.price{color:var(--g2);font-weight:700;margin-top:5px}
+.chip{display:inline-block;background:var(--g3);color:var(--g2);border-radius:20px;padding:2px 10px;font-size:12px;margin:2px 3px 2px 0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.step .n{width:34px;height:34px;border-radius:50%;background:var(--gold);color:#1b1b1b;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.band{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border-radius:16px;padding:22px;text-align:center;margin-top:26px}.band h2{color:#fff}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid #c5d3cf;border-radius:10px;font:inherit;margin:4px 0 10px;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+textarea{min-height:170px;font-family:Consolas,monospace;font-size:12.5px}
+label{font-size:12.5px;font-weight:700;color:var(--g1)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}@media(max-width:560px){.row{grid-template-columns:1fr}}
+ul.ck{list-style:none;margin:8px 0}ul.ck li{padding:7px 0 7px 26px;border-bottom:1px dashed var(--bd);position:relative}ul.ck li:before{content:"✔";position:absolute;left:0;color:var(--wa);font-weight:700}
+.st{display:inline-block;border-radius:20px;padding:2px 11px;font-size:11.5px;color:#fff;background:#888}
+.st.Baru{background:#2980b9}.st.Diproses{background:#e67e22}.st.Selesai{background:#1f9d55}.st.Dibatalkan{background:#c0392b}.st.MenungguDokumen{background:#8e44ad}
+.tl{display:flex;gap:0;margin:10px 0}.tl i{flex:1;text-align:center;font-style:normal;font-size:11px;color:var(--mut);position:relative;padding-top:18px}
+.tl i:before{content:"";position:absolute;top:0;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:#cfdad7}
+.tl i.d{color:var(--g2);font-weight:700}.tl i.d:before{background:var(--wa)}
+details{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:11px 14px;margin-bottom:8px}summary{cursor:pointer;font-weight:700;color:var(--g1)}details p{margin-top:6px;color:var(--mut)}
+footer{background:var(--g1);color:#a9cbc3;text-align:center;font-size:12.5px;padding:22px 14px 80px;margin-top:30px}footer a{color:#fff}
+#chatb{position:fixed;right:14px;bottom:14px;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;border:0;font-size:26px;cursor:pointer;z-index:60;box-shadow:0 5px 16px #0005}
+#chatp{position:fixed;right:14px;bottom:82px;width:min(340px,calc(100vw - 28px));max-height:72vh;overflow:auto;background:#fff;border:1px solid var(--bd);border-radius:16px;z-index:60;display:none;box-shadow:0 10px 30px #0005}
+#chatp .ch{background:var(--g1);color:#fff;padding:12px 14px;border-radius:16px 16px 0 0}#chatp .cb{padding:10px}
+.bub{background:var(--g3);border-radius:12px;padding:8px 10px;margin-bottom:8px;font-size:13px}
+.bub.me{background:#fdf3d9;margin-left:40px;text-align:right}.bub.bot{margin-right:40px}.qch{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}.qch button{background:#fff;border:1px solid var(--g2);color:var(--g2);border-radius:16px;padding:4px 10px;font-size:12px;cursor:pointer}#cbody{max-height:34vh;overflow:auto}
+.cbx{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;margin:0 0 6px;cursor:pointer;background:#fff;font-size:14px;font-weight:500;color:var(--tx)}
+input[type=checkbox]{width:20px;height:20px;margin:0;flex:none;accent-color:#1f9d55}
+.slot{display:flex;gap:10px;align-items:center;justify-content:space-between;border:1px dashed #b9cbc6;border-radius:12px;padding:10px 12px;margin-bottom:8px;background:#fff}.slot.ok{border:1px solid var(--wa);background:#f1fbf5}
+.bar{height:10px;background:#e3ece9;border-radius:6px;overflow:hidden;margin-top:8px}.bar i{display:block;height:100%;background:var(--wa);transition:.3s}
+.toast{position:fixed;left:50%;top:80px;transform:translateX(-50%);background:#111;color:#fff;padding:9px 18px;border-radius:24px;z-index:99;font-size:13px}
+#splash{position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,var(--g1),#1c6a60);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .5s}
+#splash h1{font-size:clamp(28px,7vw,44px);margin:10px 0}#splash p{color:#cfe6e0;max-width:420px;margin-bottom:20px}
+#splash .em{font-size:60px;animation:w 1.4s infinite}@keyframes w{50%{transform:rotate(18deg)}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="top"><div class="logo" onclick="go('home')">PRATAMA <b>LEGAL</b></div><div class="me" id="me"></div></div><nav id="nav"></nav></div></header>
+<main id="app"></main>
+<footer id="ft"></footer>
+<button id="chatb" onclick="toggleChat()">💬</button>
+<div id="chatp"></div>
+
+<script>
+const K='pratama_legal_v1';
+const SEED="🏢|Pembuatan PT|Pendirian|2500000|7-10|Akta pendirian dari notaris;KTP & NPWP pendiri/direksi/komisaris;Alamat domisili usaha;Daftar KBLI yang dipilih;Modal dasar & modal disetor;Email & nomor HP aktif|🤝|Pembuatan CV|Pendirian|1500000|5-7|KTP & NPWP sekutu aktif/pasif;Nama CV (3 pilihan);Alamat usaha;Daftar KBLI;Modal awal|👤|PT Perorangan (UMK)|Pendirian|500000|2-3|KTP & NPWP pendiri;Alamat usaha;KBLI usaha;Modal usaha;Email aktif|🆔|Pembuatan NIB / OSS RBA|Perizinan Usaha|350000|1-3|KTP pemilik/direksi;NPWP;Akta & SK Kemenkumham;Alamat usaha;Daftar KBLI;Akun OSS (jika ada)|🔢|Penambahan / Perubahan KBLI|Perizinan Usaha|750000|2-5|Akta pendirian & perubahan terakhir;SK Kemenkumham;NIB & data akun OSS;KBLI lama & KBLI baru yang diinginkan;KTP direksi|📝|Akta Perubahan (Alamat/Direksi/Modal)|Notaris|2000000|5-7|Akta terakhir & SK Kemenkumham;KTP & NPWP pihak terkait;NIB;Data perubahan lengkap|🧾|NPWP Badan & PKP|Pajak|600000|3-5|Akta & SK;KTP & NPWP direksi;Alamat usaha;Surat domisili/sewa;NIB|📍|Surat Keterangan Domisili / SKDU|Domisili|450000|2-4|KTP pemilik;Akta;Bukti sewa/PBB/kepemilikan;Surat pengantar RT/RW|☪|Sertifikat Halal|Sertifikasi|1200000|7-14|NIB;Daftar produk & bahan;Alur proses produksi;Foto tempat produksi;KTP pemilik|🍱|PIRT / BPOM / Izin Edar|Sertifikasi|1500000|10-20|NIB;Daftar produk & komposisi;Foto produk & kemasan;Hasil uji lab (jika perlu);KTP pemilik|®|Pendaftaran Merek (HAKI)|HAKI|1800000|3-5 hari (+proses DJKI)|KTP pemilik;Nama & logo merek;Kelas barang/jasa;Surat UMK (jika ada);Contoh etiket|🏗|PBG / SLF Bangunan|Bangunan|0|Sesuai survei|KTP & NPWP pemilik;Sertifikat tanah;Gambar bangunan;Alamat lokasi;IMB lama (jika ada)|📑|Laporan LKPM & Kepatuhan OSS|Perizinan Usaha|400000|1-3|Akun OSS;NIB;Data realisasi investasi;Data tenaga kerja|🚚|Izin Khusus Sektor (Transport, Trading, dll)|Perizinan Usaha|0|Sesuai sektor|NIB;Akta & SK;KBLI sektor;Dokumen teknis sektor;Konsultasi untuk detail".split("|");
+function seed(){const sv=[];for(let i=0;i<SEED.length;i+=6)sv.push({id:'S'+(sv.length+1),icon:SEED[i],name:SEED[i+1],cat:SEED[i+2],price:+SEED[i+3],days:SEED[i+4],req:SEED[i+5].split(';'),on:true});
+return{wa1:'082297167223',wa2:'081929382015',email:'fiirizkytia@gmail.com',ann:'Melayani seluruh perizinan wilayah Jabodetabek. Konsultasi awal gratis lewat chat!',
+tpl:'Halo Admin PRATAMA LEGAL, saya ingin konsultasi mengenai layanan perizinan. Mohon informasinya. Terima kasih.',
+services:sv,orders:[],users:[],admins:{raffi:{pw:'raffi123',name:'Raffi'},adit:{pw:'adit123',name:'Adit'},bunda:{pw:'bunda123',name:'Bunda'},ayah:{pw:'ayah123',name:'Ayah'}},log:[],faq:[['Wilayah mana yang dilayani?','Jakarta, Bogor, Depok, Tangerang, Tangsel, dan Bekasi.'],['Berapa lama prosesnya?','Tergantung layanan, rata-rata 1-14 hari kerja setelah dokumen lengkap.'],['Bagaimana cara bayar?','Biaya dikonfirmasi admin via WhatsApp/Email sebelum proses dimulai.'],['Apakah dokumen saya aman?','Dokumen hanya dipakai untuk keperluan pengurusan izin Anda.']]}}
+function defs(){return{hello:'Halo! 👋 Saya asisten balas cepat PRATAMA LEGAL. Pilih pertanyaan di bawah atau ketik pertanyaan Anda.',
+testi:[{id:'T1',name:'Budi S.',role:'Pemilik Toko Online, Depok',stars:5,text:'NIB dan perubahan KBLI selesai cepat, admin responsif lewat WhatsApp. Sangat membantu!',on:true,by:'Bawaan',at:''},{id:'T2',name:'Sinta A.',role:'Founder Kafe, Jakarta Selatan',stars:5,text:'Pembuatan CV dibantu dari awal sampai selesai, dokumennya jelas dan tidak ribet.',on:true,by:'Bawaan',at:''},{id:'T3',name:'Pak Hendra',role:'Kontraktor, Bekasi',stars:4,text:'Proses PBG dijelaskan dengan detail dan status bisa dipantau.',on:true,by:'Bawaan',at:''}],
+alur:[{t:'Pilih layanan',d:'Cari izin yang Anda butuhkan.'},{t:'Isi data',d:'Lengkapi form, teks pesan dibuat otomatis.'},{t:'Kirim ke admin',d:'Via WhatsApp atau email, lampirkan KTP, akta, data OSS.'},{t:'Proses & selesai',d:'Pantau status sampai dokumen jadi.'}],
+quick:[{q:'Berapa biayanya?',k:'biaya,harga,tarif,berapa',a:'Biaya mulai dari Rp 350.000 tergantung jenis layanan. Lihat menu Layanan atau tanya admin untuk rincian.'},{q:'Berapa lama prosesnya?',k:'lama,waktu,hari,cepat',a:'Estimasi 1-14 hari kerja setelah dokumen lengkap, tergantung jenis izin.'},{q:'Dokumen apa yang disiapkan?',k:'dokumen,syarat,ktp,akta,npwp',a:'Umumnya KTP, NPWP, akta & SK Kemenkumham, data OSS, dan alamat usaha. Detail tiap layanan ada di menu Layanan.'},{q:'Wilayah mana saja?',k:'wilayah,jabodetabek,area,bogor,bekasi',a:'Kami melayani Jakarta, Bogor, Depok, Tangerang, Tangerang Selatan, dan Bekasi.'},{q:'Cara mengajukan?',k:'daftar,ajukan,order,pesan,cara',a:'Buka menu Ajukan, pilih layanan, isi data, lalu kirim teks pesan ke WhatsApp atau Email admin.'},{q:'Ubah / tambah KBLI',k:'kbli',a:'Untuk KBLI siapkan akta, SK Kemenkumham, NIB/akun OSS, dan KBLI yang diinginkan. Admin akan cek kesesuaiannya.'}],
+fallback:'Terima kasih! Pertanyaan Anda akan dijawab langsung oleh admin. Silakan lanjutkan lewat WhatsApp atau Email di bawah.',
+formcfg:{wilayah:['Jakarta Pusat','Jakarta Utara','Jakarta Barat','Jakarta Selatan','Jakarta Timur','Bogor','Depok','Tangerang','Tangerang Selatan','Bekasi'],opts:['Butuh bantuan cek KBLI yang sesuai','Butuh konsultasi dulu sebelum diproses','Urgent, ingin diproses secepatnya'],intro:'Isi data, lalu buat teks pesan siap kirim.',foot:'Setelah chat/email terbuka, lampirkan foto KTP, NPWP, Akta & data OSS.'},
+mediacfg:{on:true,requireAll:true,maxMB:5,accept:'image/*,application/pdf',eta:'Prioritas: diproses lebih cepat',note:'Unggah foto/scan yang jelas dan terbaca. Lengkapi semua dokumen wajib agar langsung diproses.'},kontakTpl:['Halo, saya ingin konsultasi pembuatan PT/CV.','Halo, saya ingin menambah/mengubah KBLI.','Halo, saya ingin cek status pesanan saya.','Halo, saya ingin tanya biaya pengurusan izin.'],meta:{}}}
+function norm(d){const D=defs();for(const k in D)if(d[k]==null)d[k]=D[k];if(!d.formcfg.opts)d.formcfg.opts=D.formcfg.opts;return d}
+/* ======================= SINKRONISASI CLOUD (Firebase Realtime Database / REST) =======================
+   Semua perangkat (HP, laptop, dll) membaca & menulis ke database yang sama, jadi pesanan, pelanggan,
+   riwayat, dan berkas tidak akan hilang dan selalu terdeteksi di Panel Admin. */
+/* Alamat database dicoba berurutan; yang cocok otomatis dipakai & diingat */
+const CLOUD_URLS=['https://pratama-legal-d775b-default-rtdb.asia-southeast1.firebasedatabase.app','https://pratama-legal-d775b-default-rtdb.firebaseio.com','https://pratama-legal-d775b-default-rtdb.europe-west1.firebasedatabase.app'];
+let CLOUD_URL=(CLOUD_URLS.indexOf(localStorage.pl_cloudurl)>=0)?localStorage.pl_cloudurl:'',resP=null,es=null;
+const CLOUD_ROOT='pl_data_k7x2q9';                   // nama "folder" data (harus sama di admin & konsumen)
+const COLS={services:1,orders:1,users:1,testi:1,log:1},MAPS={admins:1,meta:1};
+const cloudOn=()=>CLOUD_URLS.length>0;
+const HARI=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'],BULAN=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+/* Format: Rabu, 28 Oktober 2026 · 14.35.20 WIB (selalu waktu Jakarta, di perangkat mana pun) */
+function nowStr(ts){const d=new Date((ts||Date.now())+252e5),z=n=>String(n).padStart(2,'0');return HARI[d.getUTCDay()]+', '+d.getUTCDate()+' '+BULAN[d.getUTCMonth()]+' '+d.getUTCFullYear()+' · '+z(d.getUTCHours())+'.'+z(d.getUTCMinutes())+'.'+z(d.getUTCSeconds())+' WIB'}
+const ckey=s=>String(s).replace(/[.$#\[\]\/\s]/g,'_');
+function hsh(s){let h=5381;for(let i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))|0;return(h>>>0).toString(36)}
+function itemKey(k,it){return ckey(it.id||it.u||((it.ts||0)+'_'+hsh(JSON.stringify(it))))}
+function flat(d){const m={};for(const k in d){const v=d[k];if(COLS[k]&&Array.isArray(v)){v.forEach(it=>{if(it&&typeof it==='object')m[k+'/'+itemKey(k,it)]=JSON.stringify(it)})}else if(MAPS[k]&&v&&typeof v==='object'){for(const s in v)m[k+'/'+ckey(s)]=JSON.stringify([s,v[s]])}else if(v!==undefined){m['k/'+ckey(k)]=JSON.stringify(v)}}return m}
+function unflat(m){const d={services:[],orders:[],users:[],testi:[],log:[],admins:{},meta:{}},t={};
+for(const p in m){const i=p.indexOf('/'),k=p.slice(0,i),s=p.slice(i+1);let v;try{v=JSON.parse(m[p])}catch(e){continue}
+if(k==='k')d[s]=v;else if(COLS[k])(t[k]=t[k]||[]).push([s,v]);else if(MAPS[k]&&Array.isArray(v))d[k][v[0]]=v[1]}
+const nv=it=>it.ts||(+((String(it.id||'').match(/(\d+)$/)||[])[1])||0);
+for(const k in t){t[k].sort((a,b)=>{const x=nv(a[1]),y=nv(b[1]);return x-y||(a[0]<b[0]?-1:a[0]>b[0]?1:0)});d[k]=t[k].map(e=>e[1]);if(k==='log')d[k].reverse()}
+return d}
+function rflat(r){const m={};if(!r||typeof r!=='object')return m;for(const k in r){if(k==='_ping')continue;let v=r[k];if(!v||typeof v!=='object')continue;if(Array.isArray(v)){const o={};v.forEach((x,i)=>{if(x!=null)o[i]=x});v=o}for(const s in v)if(typeof v[s]==='string')m[k+'/'+s]=v[s]}return m}
+const same=(a,b)=>{const ka=Object.keys(a);return ka.length===Object.keys(b).length&&ka.every(k=>a[k]===b[k])};
+const CU=p=>CLOUD_URL.replace(/\/+$/,'')+'/'+CLOUD_ROOT+(p?'/'+p:'')+'.json';
+const FU=id=>CLOUD_URL.replace(/\/+$/,'')+'/'+CLOUD_ROOT+'_files/'+ckey(id)+'.json';
+function tf(url,opt,ms){const c=new AbortController(),t=setTimeout(()=>c.abort(),ms||8000);return fetch(url,{...opt,signal:c.signal}).finally(()=>clearTimeout(t))}
+async function cget(){const r=await tf(CU('')+'?_='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('get '+r.status);return r.json()}
+async function cpatch(o){const b=JSON.stringify(o),r=await tf(CU(''),{method:'PATCH',headers:{'Content-Type':'application/json'},body:b,keepalive:b.length<60000},20000);if(!r.ok)throw new Error('patch '+r.status)}
+function resolveCloud(){if(CLOUD_URL)return Promise.resolve(CLOUD_URL);if(resP)return resP;
+resP=(async()=>{for(const u of CLOUD_URLS){try{const r=await tf(u.replace(/\/+$/,'')+'/'+CLOUD_ROOT+'/_ping.json',{cache:'no-store'},6000);if(r.ok||r.status===401||r.status===403){CLOUD_URL=u;try{localStorage.pl_cloudurl=u}catch(e){}return u}}catch(e){}}throw new Error('database tidak ditemukan')})().finally(()=>{resP=null});return resP}
+function startStream(){if(es||!CLOUD_URL||typeof EventSource==='undefined')return;try{es=new EventSource(CU('_ping'));es.addEventListener('put',()=>cloudSync());es.addEventListener('patch',()=>cloudSync())}catch(e){es=null}}
+function readLocal(){try{const d=JSON.parse(localStorage[K]);return d&&d.services?d:{}}catch(e){return{}}}
+let BASE=null;try{BASE=JSON.parse(localStorage.pl_base)}catch(e){}
+let busy=null,rq=false,pend=false;
+/* Gabung data perangkat ini dengan cloud (3 arah: dasar, lokal, cloud) tanpa menimpa data perangkat lain */
+async function syncOnce(){
+const rem=rflat(await cget()),old=readLocal(),loc=flat(old),first=!BASE,B=BASE||{},out={},upd={};
+if(first){const has=Object.keys(rem).length>0;Object.assign(out,rem);for(const p in loc){if(p in rem)continue;if(!has||/^(orders|users|log)\//.test(p)){out[p]=loc[p];upd[p]=loc[p]}}}
+else{for(const p of new Set([...Object.keys(rem),...Object.keys(loc),...Object.keys(B)])){const b=B[p],l=loc[p],r=rem[p];
+ if(l===b){if(r!==undefined)out[p]=r}else{if(l!==undefined)out[p]=l;if(l!==r)upd[p]=l===undefined?null:l}}}
+const nd=norm(unflat(out)),nf=flat(nd);let info=null;
+if(!same(nf,loc)){const ids=new Set((old.orders||[]).map(o=>o.id));localStorage[K]=JSON.stringify(nd);info={newOrders:(nd.orders||[]).filter(o=>!ids.has(o.id))}}
+let ok=true;if(Object.keys(upd).length){try{upd._ping=Date.now();await cpatch(upd)}catch(e){ok=false}}
+BASE=ok?out:rem;try{localStorage.pl_base=JSON.stringify(BASE)}catch(e){}
+if(info)afterChange(info);
+if(!ok)throw new Error('push gagal')}
+function cloudSync(){if(!cloudOn())return Promise.resolve();if(busy){rq=true;return busy}
+busy=(async()=>{try{await resolveCloud();do{rq=false;await syncOnce()}while(rq);badge(true);startStream()}catch(e){badge(false)}finally{busy=null}})();return busy}
+function skipRefresh(){return pg==='ajukan'}
+function busyUI(){const a=document.activeElement;return!!(a&&/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName))}
+function uiRefresh(){if(typeof render!=='function')return;if(busyUI()||skipRefresh()){pend=true;return}pend=false;render()}
+function afterChange(info){try{db=load()}catch(e){}
+if(info&&info.newOrders&&info.newOrders.length&&typeof me!=='undefined'&&me&&typeof toast==='function')toast('🔔 Pesanan baru: '+info.newOrders.map(o=>o.id).join(', '));
+uiRefresh()}
+function badge(ok){if(typeof document==='undefined'||!document.body)return;let b=document.getElementById('cloudb');
+if(!b){b=document.createElement('div');b.id='cloudb';b.style.cssText='position:fixed;left:8px;bottom:8px;z-index:60;font:11px system-ui,Arial;background:#000b;color:#fff;padding:4px 10px;border-radius:14px;cursor:pointer;max-width:92vw';b.onclick=()=>{cloudSync()};document.body.appendChild(b)}
+if(!cloudOn()){b.style.background='#b00020cc';b.textContent='⚠ Cloud belum diatur: data hanya tersimpan di perangkat ini'}
+else if(ok){b.style.background='#0a6b3acc';b.textContent='☁ Tersinkron · '+nowStr()}
+else{b.style.background='#b26a00cc';b.textContent='⚠ Offline: data aman di perangkat & dikirim otomatis saat online'}}
+/* ---- Berkas (foto/PDF) disimpan lokal + cloud ---- */
+const b2d=b=>new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(b)});
+async function cput(o){await resolveCloud();const data=await b2d(o.blob),r=await tf(FU(o.id),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:o.id,order:o.order,name:o.name,type:o.type,size:o.size,data})},90000);if(!r.ok)throw new Error('upload '+r.status)}
+function fup(){try{return new Set(JSON.parse(localStorage.pl_fup||'[]'))}catch(e){return new Set()}}
+function fupAdd(id){const s=fup();s.add(id);try{localStorage.pl_fup=JSON.stringify([...s])}catch(e){}}
+async function fput(o){await lput(o);if(cloudOn()){await cput(o);fupAdd(o.id)}}
+async function fget(id){let r=null;try{r=await lget(id)}catch(e){}if(r)return r;if(!cloudOn())return null;
+try{await resolveCloud();const x=await(await tf(FU(id),{},60000)).json();if(!x||!x.data)return null;const blob=await(await fetch(x.data)).blob();r={id:x.id,order:x.order,name:x.name,type:x.type||blob.type||'',size:x.size,blob};try{await lput(r)}catch(e){}return r}catch(e){return null}}
+async function fdel(id){await ldel(id);if(cloudOn())try{await resolveCloud();await tf(FU(id),{method:'DELETE'})}catch(e){}}
+async function cloudFiles(){if(!cloudOn())return;const S=fup();let ch=false;
+for(const o of(readLocal().orders||[]))for(const d of(o.docs||[])){if(S.has(d.id))continue;let r=null;try{r=await lget(d.id)}catch(e){}if(!r)continue;try{await cput(r);fupAdd(d.id)}catch(e){}}}
+function cloudStart(){badge(true);if(!cloudOn()){badge(false);return}
+cloudSync().then(cloudFiles);
+setInterval(()=>{if(!document.hidden)cloudSync()},30000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)cloudSync()});
+addEventListener('online',()=>cloudSync());addEventListener('focus',()=>cloudSync());
+document.addEventListener('focusout',()=>{if(pend)setTimeout(()=>{if(pend&&!busyUI())uiRefresh()},400)})}
+/* ======================= AKHIR SINKRONISASI ======================= */
+
+function load(){try{const d=JSON.parse(localStorage[K]);if(d&&d.services)return norm(d)}catch(e){}return norm(seed())}
+function save(){try{localStorage[K]=JSON.stringify(db)}catch(e){}cloudSync()}
+let db=load();save();
+let cur=localStorage.pl_user||'',stack=['home'],pg='home',arg=null,draft={},q='',fc='Semua';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rp=n=>n>0?'Rp '+Number(n).toLocaleString('id-ID'):'Hubungi admin';
+const wanum=n=>{n=String(n).replace(/\D/g,'');return n.startsWith('0')?'62'+n.slice(1):n};
+const walink=(n,t)=>'https://wa.me/'+wanum(n)+'?text='+encodeURIComponent(t);
+const mail=(s,t)=>'mailto:'+db.email+'?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(t);
+function greet(){const h=new Date().getHours();return h<11?'Selamat pagi':h<15?'Selamat siang':h<18?'Selamat sore':'Selamat malam'}
+function who(){const u=db.users.find(x=>x.u===cur);return cur?(u&&u.nama?u.nama.split(' ')[0]:cur):'Sahabat Usaha'}
+function toast(m){const t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(()=>t.remove(),2000)}
+function go(p,a){if(pg!==p||a!==arg)stack.push(p);pg=p;arg=a;render();scrollTo(0,0)}
+function back(){if(stack.length>1)stack.pop();pg=stack[stack.length-1]||'home';render();scrollTo(0,0)}
+function splash(){if(sessionStorage.pl_sp)return $('#splash').remove();sessionStorage.pl_sp=1;
+$('#splash').innerHTML=`<div class="em">👋</div><div class="mut" style="color:#a9cbc3;letter-spacing:2px">PRATAMA LEGAL</div><h1 class="serif">${greet()}, ${esc(who())}!</h1><p>Selamat datang di layanan perizinan usaha Jabodetabek. Urus KBLI, NIB, PT/CV, halal, merek dan lainnya tanpa bolak-balik kantor.</p><button class="btn gold" onclick="closeSp()">Mulai Jelajahi →</button>`;
+setTimeout(closeSp,5000)}
+function closeSp(){const s=$('#splash');if(!s)return;s.style.opacity=0;setTimeout(()=>s.remove(),500)}
+function render(){db=load();
+ const it=[['home','Beranda'],['layanan','Layanan'],['ajukan','Ajukan'],['alur','Alur'],['pesanan','Pesanan'],['kontak','Kontak'],['akun',cur?'👤 '+cur:'Masuk']];
+ $('#nav').innerHTML=it.map(i=>`<button class="${pg===i[0]?'on':''}" onclick="go('${i[0]}')">${i[1]}</button>`).join('');
+ $('#me').textContent=cur?'👤 '+cur:'';
+ const P={home,layanan,detail,ajukan,alur,pesanan,kontak,akun};
+ $('#app').innerHTML=(pg!=='home'?'<div class="back"><button class="btn line sm" onclick="back()">← Kembali</button></div>':'')+(P[pg]||home)();
+ $('#ft').innerHTML=`<b style="color:#fff;font-family:Georgia,serif;font-size:16px">PRATAMA LEGAL</b><br>Jasa Perizinan Jabodetabek<br>WA 1: <a target="_blank" href="${walink(db.wa1,db.tpl)}">${esc(db.wa1)}</a> · WA 2: <a target="_blank" href="${walink(db.wa2,db.tpl)}">${esc(db.wa2)}</a><br>Email: <a href="${mail('Konsultasi Perizinan',db.tpl)}">${esc(db.email)}</a><br>© 2026 PRATAMA LEGAL`;
+ chat()}
+const IC=['#e8f1ee','#fdf3d9','#e6eefb','#f7e6ea','#eee8f8'];
+function card(s){return`<div class="card sv" onclick="go('detail','${s.id}')"><div class="ic" style="background:${IC[s.id.slice(1)%5]}">${s.icon}</div><h3>${esc(s.name)}</h3><div class="mut">${esc(s.cat)} · ⏱ ${esc(s.days)} hari</div><div class="price">${rp(s.price)}</div></div>`}
+function contactBox(){return`<div class="grid"><div class="card"><div class="ic">💬</div><b>WhatsApp Admin 1</b><div class="mut">${esc(db.wa1)}</div><div class="acts"><a class="btn wa sm" target="_blank" href="${walink(db.wa1,db.tpl)}">Chat Sekarang</a></div></div><div class="card"><div class="ic">💬</div><b>WhatsApp Admin 2</b><div class="mut">${esc(db.wa2)}</div><div class="acts"><a class="btn wa sm" target="_blank" href="${walink(db.wa2,db.tpl)}">Chat Sekarang</a></div></div><div class="card"><div class="ic">✉️</div><b>Email</b><div class="mut">${esc(db.email)}</div><div class="acts"><a class="btn mail sm" href="${mail('Konsultasi Perizinan',db.tpl)}">Kirim Email</a></div></div></div>`}
+function home(){const sv=db.services.filter(s=>s.on);
+return`<div class="hero"><div><h1>Izin usaha Anda beres, tanpa bolak-balik kantor.</h1><p>PRATAMA LEGAL mengurus KBLI, NIB, PT/CV, hingga izin sektoral untuk Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Kirim dokumen lewat WhatsApp atau email, kami yang proses.</p>
+<div class="acts"><button class="btn gold" onclick="go('layanan')">Lihat layanan</button>${cur?`<button class="btn wa" onclick="go('pesanan')">Pesanan saya</button>`:`<button class="btn wa" onclick="go('akun')">Daftar sekarang</button>`}<a class="btn white" target="_blank" href="${walink(db.wa1,db.tpl)}">Tanya via WhatsApp</a></div></div>
+<svg viewBox="0 0 300 240"><rect x="30" y="40" width="100" height="170" rx="10" fill="#fff"/>${[0,1,2,3].map(r=>[0,1,2].map(c=>`<rect x="${44+c*28}" y="${54+r*38}" width="18" height="24" rx="4" fill="#17574f"/>`).join('')).join('')}<rect x="140" y="84" width="84" height="126" rx="6" fill="#cfe3de"/><rect x="154" y="98" width="56" height="112" fill="#d9cf9d"/><g transform="rotate(6 220 160)"><rect x="196" y="120" width="82" height="90" rx="8" fill="#fff"/><rect x="208" y="150" width="50" height="5" rx="2" fill="#17574f"/><rect x="208" y="166" width="50" height="5" rx="2" fill="#17574f"/><rect x="208" y="182" width="36" height="5" rx="2" fill="#17574f"/></g><circle cx="262" cy="118" r="20" fill="#1fa855"/><path d="M252 118l7 8 13-16" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="18" y="210" width="240" height="9" rx="4" fill="#e0a82e"/></svg></div>
+${db.ann?`<div class="card" style="margin-top:12px;background:#fff8e1;border-color:#ecd187">📢 ${esc(db.ann)}</div>`:''}
+<div class="stats"><div class="stat"><b>${sv.length}+</b><span>Jenis Layanan</span></div><div class="stat"><b>6</b><span>Wilayah Jabodetabek</span></div><div class="stat"><b>1-14</b><span>Hari Kerja</span></div><div class="stat"><b>24/7</b><span>Chat Admin</span></div></div>
+<div class="sec"><h2>Layanan Populer</h2><div class="sub">Pilih layanan, lihat dokumen yang dibutuhkan, lalu ajukan.</div><div class="grid">${sv.slice(0,6).map(card).join('')}</div><div class="acts"><button class="btn line" onclick="go('layanan')">Semua layanan →</button></div></div>
+<div class="sec"><h2>Cara Kerjanya</h2><div class="sub">4 langkah mudah.</div>${steps()}</div>
+<div class="sec"><h2>Kenapa PRATAMA LEGAL?</h2><div class="grid">${[['⚡','Cepat & Terpantau','Status pesanan bisa dicek di akun Anda.'],['🔒','Dokumen Aman','Data hanya dipakai untuk pengurusan izin.'],['💬','Chat Langsung','Admin 1 & 2 siap via WhatsApp dan email.']].map(x=>`<div class="card"><div class="ic">${x[0]}</div><b>${x[1]}</b><div class="mut">${x[2]}</div></div>`).join('')}</div></div>
+${testi()}<div class="sec"><h2>Pertanyaan Umum</h2>${faqs()}</div>
+<div class="band"><h2 class="serif">Siap urus izin usaha Anda?</h2><p style="color:#cfe6e0;margin:6px 0 12px">Kirim data sekarang, kami bantu dari awal sampai selesai.</p><div class="acts" style="justify-content:center"><button class="btn gold" onclick="go('ajukan')">Ajukan Sekarang</button><a class="btn white" target="_blank" href="${walink(db.wa2,db.tpl)}">Chat Admin 2</a></div></div>`}
+function steps(){return`<div class="steps">${db.alur.map((s,i)=>`<div class="card step"><div class="n">${i+1}</div><b>${esc(s.t)}</b><div class="mut">${esc(s.d)}</div></div>`).join('')}</div>`}
+function testi(){const t=db.testi.filter(x=>x.on);if(!t.length)return'';return`<div class="sec"><h2>Kata Mereka</h2><div class="sub">Pengalaman klien PRATAMA LEGAL.</div><div class="grid">${t.map(x=>`<div class="card"><div style="color:var(--gold);font-size:16px">${'★'.repeat(x.stars||5)}${'☆'.repeat(5-(x.stars||5))}</div><p style="margin:6px 0">“${esc(x.text)}”</p><b>${esc(x.name)}</b><div class="mut">${esc(x.role)}</div></div>`).join('')}</div></div>`}
+function faqs(){return db.faq.map(f=>`<details><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join('')}
+function alur(){return`<div class="sec" style="margin-top:0"><h2>Alur Pengurusan</h2>${steps()}</div><div class="sec"><h2>Dokumen Umum yang Disiapkan</h2><div class="grid">${[['🪪','KTP','Foto asli, jelas, semua pengurus/pemilik'],['🧾','NPWP','Pribadi dan badan (jika ada)'],['📜','Akta & SK Kemenkumham','Scan semua halaman'],['🖥','Data OSS','Username/email, NIB, KBLI saat ini'],['📍','Alamat Usaha','Bukti sewa / PBB / domisili'],['📞','Kontak','Email dan nomor WA aktif']].map(d=>`<div class="card"><div class="ic">${d[0]}</div><b>${d[1]}</b><div class="mut">${d[2]}</div></div>`).join('')}</div></div><div class="sec"><h2>Pertanyaan Umum</h2>${faqs()}</div>`}
+function layanan(){const cats=['Semua',...new Set(db.services.map(s=>s.cat))];
+return`<div class="sec" style="margin-top:0"><h2>Daftar Layanan</h2><input placeholder="🔍 Cari layanan, mis. KBLI" value="${esc(q)}" oninput="q=this.value;lst()"><div class="acts" style="margin:0 0 12px">${cats.map(c=>`<button class="btn sm ${c===fc?'':'line'}" onclick="fc='${c}';render()">${c}</button>`).join('')}</div><div class="grid" id="lst">${lstH()}</div></div>`}
+function lstH(){const l=db.services.filter(s=>s.on&&(fc==='Semua'||s.cat===fc)&&(s.name+s.cat).toLowerCase().includes(q.toLowerCase()));return l.map(card).join('')||'<div class="mut">Layanan tidak ditemukan.</div>'}
+function lst(){$('#lst').innerHTML=lstH()}
+function detail(){const s=db.services.find(x=>x.id===arg);if(!s)return'<div class="card">Layanan tidak ditemukan.</div>';
+const t=`Halo Admin PRATAMA LEGAL, saya ingin bertanya tentang layanan *${s.name}*. Mohon info biaya & prosesnya. Terima kasih.`;
+return`<div class="card"><div class="ic" style="width:60px;height:60px;font-size:32px;background:${IC[s.id.slice(1)%5]}">${s.icon}</div><h2 class="serif" style="color:var(--g1)">${esc(s.name)}</h2><span class="chip">${esc(s.cat)}</span><span class="chip">⏱ ${esc(s.days)} hari</span><div class="price" style="font-size:18px;margin:8px 0">Mulai ${rp(s.price)}</div><h3 style="margin-top:10px">Dokumen yang dibutuhkan</h3><ul class="ck">${s.req.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
+<div class="acts"><button class="btn gold" onclick="draft={svc:'${s.id}'};go('ajukan')">✍ Ajukan Layanan Ini</button><a class="btn wa" target="_blank" href="${walink(db.wa1,t)}">WA Admin 1</a><a class="btn wa" target="_blank" href="${walink(db.wa2,t)}">WA Admin 2</a><a class="btn mail" href="${mail('Tanya '+s.name,t)}">Email</a></div></div>`}
+
+function idb(){return new Promise((res,rej)=>{const r=indexedDB.open('pl_files',1);r.onupgradeneeded=()=>r.result.createObjectStore('f',{keyPath:'id'});r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
+async function lput(o){const d=await idb();return new Promise((res,rej)=>{const t=d.transaction('f','readwrite');t.objectStore('f').put(o);t.oncomplete=res;t.onerror=()=>rej(t.error)})}
+async function lget(id){const d=await idb();return new Promise(res=>{const q=d.transaction('f').objectStore('f').get(id);q.onsuccess=()=>res(q.result);q.onerror=()=>res(null)})}
+async function ldel(id){const d=await idb();return new Promise(res=>{const t=d.transaction('f','readwrite');t.objectStore('f').delete(id);t.oncomplete=res;t.onerror=res})}
+const kb=n=>n>1048576?(n/1048576).toFixed(1)+' MB':Math.ceil(n/1024)+' KB';
+function slots(s){return(s.media&&s.media.length)?s.media:s.req.map(n=>({n,req:true}))}
+
+function mediaOK(s){return db.mediacfg.on&&s.mediaOn!==false}
+function shrink(file){return new Promise(res=>{if(!file.type.startsWith('image/')||file.size<600000)return res(file);const img=new Image(),u=URL.createObjectURL(file);img.onload=()=>{const k=Math.min(1,1600/Math.max(img.width,img.height)),c=document.createElement('canvas');c.width=img.width*k;c.height=img.height*k;c.getContext('2d').drawImage(img,0,0,c.width,c.height);c.toBlob(b=>{URL.revokeObjectURL(u);res(b&&b.size<file.size?new File([b],file.name.replace(/\.\w+$/,'')+'.jpg',{type:'image/jpeg'}):file)},'image/jpeg',.82)};img.onerror=()=>res(file);img.src=u})}
+function buildMsg(){const f=draft,s=db.services.find(x=>x.id===f.svc)||{name:'-',req:[]};
+const ck=s.req.map((r,i)=>(f.chk&&f.chk[i]?'☑ ':'☐ ')+r).join('\n'),op=(db.formcfg.opts||[]).map((r,i)=>(f.opt&&f.opt[i]?'☑ ':'☐ ')+r).join('\n');
+return `*PENGAJUAN PERIZINAN - PRATAMA LEGAL*\nJalur: Biasa (dokumen dikirim via WhatsApp)\nLayanan: ${s.name}\nNama: ${f.nama||'-'}\nNama Usaha: ${f.usaha||'-'}\nWilayah: ${f.kota||'-'}\n\nDokumen (☑ siap dikirim / ☐ belum):\n${ck}\n`+(op?`\nOpsi tambahan:\n${op}\n`:'')+`\nSaya akan kirim foto/scan dokumen di chat ini. Mohon info biaya & estimasi waktu. Terima kasih.`}
+function cbx(g,i,t){return `<label class="cbx"><input type="checkbox" ${draft[g][i]?'checked':''} onchange="draft.${g}[${i}]=this.checked"><span>${esc(t)}</span></label>`}
+function ajukan(){const f=draft,u=db.users.find(x=>x.u===cur);if(u&&!f.nama)f.nama=u.nama;f.mode=f.mode||'biasa';f.chk=f.chk||{};f.opt=f.opt||{};f.files=f.files||{};
+if(f._done)return done();
+const s=db.services.find(x=>x.id===f.svc),mc=db.mediacfg,KT=db.formcfg.wilayah;
+if(f.mode==='media'&&(!mc.on||(s&&!mediaOK(s))))f.mode='biasa';
+const I=(k,l)=>`<div><label>${l}</label><input value="${esc(f[k]||'')}" oninput="draft.${k}=this.value"></div>`;
+const jal=(m,ic,t,d)=>`<div class="card sv" style="padding:10px;${f.mode===m?'border:2px solid var(--gold);background:#fffaf0':''}" onclick="draft.mode='${m}';render()"><b>${ic} ${t}</b><div class="mut">${d}</div></div>`;
+return `<div class="sec" style="margin-top:0"><h2>Form Pengajuan</h2><div class="sub">${esc(db.formcfg.intro)}</div></div><div class="card"><label>1. Pilih jalur</label><div class="grid" style="grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 12px">${jal('biasa','💬','Jalur Biasa','Isi singkat, dokumen via WhatsApp')}${mc.on?jal('media','⚡','Jalur Media','Upload file dari galeri · '+esc(mc.eta)):''}</div>
+<label>2. Layanan</label><select onchange="draft.svc=this.value;draft.chk={};draft.files={};render()"><option value="">-- pilih layanan --</option>${db.services.filter(x=>x.on).map(x=>`<option value="${x.id}" ${f.svc===x.id?'selected':''}>${esc(x.name)}</option>`).join('')}</select>
+<div class="row">${I('nama','Nama Lengkap')}${I('usaha','Nama Usaha / PT / CV')}</div>
+<label>Wilayah</label><select onchange="draft.kota=this.value"><option value="">-- pilih wilayah --</option>${KT.map(k=>`<option ${f.kota===k?'selected':''}>${esc(k)}</option>`).join('')}</select>
+${s?(f.mode==='media'?mediaBlock(s):biasaBlock(s)):'<div class="mut">Pilih layanan untuk melanjutkan.</div>'}</div>`}
+function biasaBlock(s){const op=db.formcfg.opts||[];
+return `<label style="display:block;margin-top:6px">3. Centang dokumen yang akan Anda kirim via WhatsApp</label><div style="margin-top:6px">${s.req.map((r,i)=>cbx('chk',i,r)).join('')}</div>${op.length?`<label style="display:block;margin-top:10px">Opsi tambahan</label><div style="margin-top:6px">${op.map((r,i)=>cbx('opt',i,r)).join('')}</div>`:''}<div class="mut" style="margin:8px 0">Cukup centang, tidak perlu mengetik. Foto/scan dokumen dikirim saat chat WhatsApp.</div><button class="btn gold" onclick="preview()">📝 Buat Teks Pesan</button><div id="pv"></div>`}
+function mediaBlock(s){const f=draft,sl=slots(s),mc=db.mediacfg,tot=sl.filter(x=>x.req).length,dn=sl.filter((x,i)=>x.req&&f.files[i]).length,al={'image/*,application/pdf':'Foto & PDF','image/*':'Foto saja','application/pdf':'PDF saja'}[mc.accept]||'Foto/PDF';
+return `<div class="bub bot" style="margin:10px 0 6px">⚡ <b>Jalur Media</b> — ${esc(mc.note)}<br><span class="mut">Maks ${mc.maxMB} MB per file · ${al}</span></div><div class="bar"><i style="width:${tot?dn/tot*100:100}%"></i></div><div class="mut" style="margin:4px 0 10px">Dokumen wajib terisi: ${dn}/${tot}</div>
+${sl.map((x,i)=>{const fl=f.files[i];return `<div class="slot ${fl?'ok':''}"><div style="flex:1;min-width:0"><b>${esc(x.n)}</b> ${x.req?'<span class="st Baru">wajib</span>':'<span class="st">opsional</span>'}<div class="mut" style="overflow:hidden;text-overflow:ellipsis">${fl?'✔ '+esc(fl.name)+' · '+kb(fl.size):'Belum ada file'}</div></div><div class="acts" style="margin:0;flex:none"><label class="btn sm ${fl?'line':'gold'}" style="cursor:pointer">${fl?'Ganti':'📁 Galeri'}<input type="file" accept="${mc.accept}" hidden onchange="pickF(${i},this)"></label>${fl?`<button class="btn mail sm" onclick="rmF(${i})">✕</button>`:''}</div></div>`}).join('')}
+${cur?`<button class="btn gold" onclick="submitMedia()">🚀 Kirim Berkas (Jalur Media)</button>`:`<div class="bub">Masuk dulu agar berkas tersimpan di akun Anda.</div><button class="btn" onclick="go('akun')">Masuk / Daftar</button>`}`}
+function pickF(i,inp){const fl=inp.files[0];if(!fl)return;const mc=db.mediacfg;if(!fl.type.startsWith('image/')&&fl.size>mc.maxMB*1048576)return toast('File melebihi '+mc.maxMB+' MB');if(fl.size>20*1048576)return toast('Foto terlalu besar (maks 20 MB)');draft.files[i]=fl;render()}
+function rmF(i){delete draft.files[i];render()}
+async function submitMedia(){const f=draft,s=db.services.find(x=>x.id===f.svc);if(!f.nama||!f.kota)return toast('Isi nama dan wilayah dulu');const sl=slots(s),miss=sl.filter((x,i)=>x.req&&!f.files[i]).map(x=>x.n);
+if(db.mediacfg.requireAll&&miss.length)return toast('Belum lengkap: '+miss[0]+(miss.length>1?' (+'+(miss.length-1)+' lagi)':''));
+if(!Object.keys(f.files).length)return toast('Pilih minimal satu file');toast('Mengunggah berkas…');
+const id='PL'+Date.now().toString().slice(-7),docs=[],sh=[];
+try{for(let i=0;i<sl.length;i++){const fl=f.files[i];if(!fl)continue;const b=await shrink(fl),fid=id+'_'+i;await fput({id:fid,order:id,name:b.name,type:b.type,size:b.size,blob:b});docs.push({slot:sl[i].n,id:fid,name:b.name,size:b.size,type:b.type});sh.push(b)}}catch(e){return toast('Gagal menyimpan berkas, coba lagi')}
+db=load();const u=db.users.find(x=>x.u===cur)||{};db.orders.push({id,user:cur,nama:f.nama,hp:u.hp||'',usaha:f.usaha,kota:f.kota,svc:s.name,price:s.price,status:'Baru',jalur:'media',prio:true,docs,need:sl,ts:Date.now(),at:nowStr(),hist:[]});save();
+const msg=`*PENGAJUAN PERIZINAN (JALUR MEDIA ⚡) - PRATAMA LEGAL*\nID Pesanan: ${id}\nLayanan: ${s.name}\nNama: ${f.nama}\nNama Usaha: ${f.usaha||'-'}\nWilayah: ${f.kota}\n\nBerkas lengkap (${docs.length} file):\n`+docs.map((d,i)=>(i+1)+'. '+d.slot).join('\n')+`\n\nMohon segera diproses. Terima kasih.`;
+draft={mode:'media',_done:{id,msg,svc:s.name,n:docs.length,files:sh}};render()}
+function canShareF(d){try{return navigator.canShare&&navigator.canShare({files:d.files})}catch(e){return false}}
+function shareF(){const d=draft._done;navigator.share({files:d.files,text:d.msg,title:'Berkas '+d.id}).catch(()=>{})}
+function done(){const d=draft._done;return `<div class="card"><div class="ic" style="background:#dff5e6">✅</div><h2 class="serif" style="color:var(--g1)">Berkas tersimpan!</h2><p>Pesanan <b>${esc(d.id)}</b> (${esc(d.svc)}) · ${d.n} file. ${esc(db.mediacfg.eta)}</p><div class="bub bot">Agar admin langsung menerima berkasnya, kirim lewat tombol di bawah (teks sudah siap).</div><div class="acts">${canShareF(d)?`<button class="btn wa" onclick="shareF()">📤 Kirim Berkas ke WhatsApp</button>`:''}<a class="btn wa" target="_blank" href="${walink(db.wa1,d.msg)}">Kabari WA Admin 1</a><a class="btn wa" target="_blank" href="${walink(db.wa2,d.msg)}">WA Admin 2</a><a class="btn mail" href="${mail('Pengajuan Media '+d.id,d.msg)}">Email</a></div><div class="acts"><button class="btn line" onclick="go('pesanan')">Lihat Pesanan</button><button class="btn gold" onclick="draft={};render()">Ajukan Lagi</button></div></div>`}
+function preview(){if(!draft.svc)return toast('Pilih layanan dulu');if(!draft.nama||!draft.kota)return toast('Isi nama dan wilayah');const m=buildMsg(),s=db.services.find(x=>x.id===draft.svc);
+$('#pv').innerHTML=`<h3 style="margin-top:14px">Pesan siap kirim</h3><textarea id="msg">${esc(m)}</textarea><div class="acts"><a class="btn wa" target="_blank" onclick="sv()" href="${walink(db.wa1,m)}">Kirim WA Admin 1</a><a class="btn wa" target="_blank" onclick="sv()" href="${walink(db.wa2,m)}">Kirim WA Admin 2</a><a class="btn mail" onclick="sv()" href="${mail('Pengajuan '+s.name+' - '+(draft.nama||''),m)}">Kirim Email</a><button class="btn line" onclick="navigator.clipboard.writeText($('#msg').value);toast('Teks disalin')">📋 Salin</button><button class="btn" onclick="sv(1)">💾 Simpan Pesanan</button></div><p class="mut" style="margin-top:8px">${esc(db.formcfg.foot)}</p>`;$('#pv').scrollIntoView({behavior:'smooth'})}
+function sv(m){if(!cur){if(m)toast('Masuk dulu untuk menyimpan pesanan');return}if(draft._sid){if(m)toast('Pesanan sudah tersimpan');return}
+const s=db.services.find(x=>x.id===draft.svc);db=load();const u=db.users.find(x=>x.u===cur)||{},id='PL'+Date.now().toString().slice(-7);
+db.orders.push({id,user:cur,nama:draft.nama,hp:u.hp||'',usaha:draft.usaha,kota:draft.kota,svc:s.name,price:s.price,status:'Baru',jalur:'biasa',chk:s.req.map((r,i)=>({n:r,ok:!!draft.chk[i]})),ts:Date.now(),at:nowStr(),hist:[]});save();draft._sid=id;if(m){toast('Pesanan '+id+' tersimpan');go('pesanan')}}
+async function addExtra(oid,inp){const fl=inp.files[0];if(!fl)return;const lb=prompt('Nama dokumen ini (mis. KTP tambahan):',fl.name);if(lb===null)return;toast('Mengunggah…');const b=await shrink(fl),fid=oid+'_x'+Date.now();try{await fput({id:fid,order:oid,name:b.name,type:b.type,size:b.size,blob:b})}catch(e){return toast('Gagal mengunggah, periksa koneksi internet')}db=load();const o=db.orders.find(x=>x.id===oid);(o.docs=o.docs||[]).push({slot:lb||b.name,id:fid,name:b.name,size:b.size,type:b.type});save();toast('Berkas ditambahkan');render()}
+function pesanan(){if(!cur)return`<div class="card"><h3>Masuk untuk melihat pesanan</h3><p class="mut">Anda perlu akun untuk memantau status.</p><div class="acts"><button class="btn gold" onclick="go('akun')">Masuk / Daftar</button></div></div>`;
+const l=db.orders.filter(o=>o.user===cur).reverse(),S=['Baru','Diproses','Selesai'];
+return`<div class="sec" style="margin-top:0"><h2>Pesanan Saya</h2></div>${l.map(o=>{const i=S.indexOf(o.status),md=o.jalur==='media';return`<div class="card" style="margin-bottom:10px"><b>${esc(o.id)}</b> · ${esc(o.svc)} <span class="st ${o.status.replace(/ /g,'')}">${esc(o.status)}</span> <span class="st" style="background:${md?'#b8860b':'#5a7a76'}">${md?'⚡ Media':'💬 Biasa'}</span><div class="mut">${esc(o.at)} · ${esc(o.usaha||'-')}</div><div class="tl">${S.map((s,j)=>`<i class="${j<=i?'d':''}">${s}</i>`).join('')}</div>${o.adminNote?`<div class="bub">📌 Admin: ${esc(o.adminNote)}</div>`:''}${md?`<div class="mut" style="margin-bottom:6px">Berkas: ${(o.docs||[]).map(d=>'✔ '+esc(d.slot)).join(' · ')||'-'}</div>${o.status==='Menunggu Dokumen'?'<div class="bub">Admin menunggu dokumen tambahan Anda.</div>':''}<label class="btn line sm" style="cursor:pointer">➕ Tambah berkas<input type="file" accept="${db.mediacfg.accept}" hidden onchange="addExtra('${o.id}',this)"></label> `:''}<div class="acts"><a class="btn wa sm" target="_blank" href="${walink(db.wa1,'Halo Admin, saya ingin cek status pesanan '+o.id+' ('+o.svc+').')}">Tanya Status</a><a class="btn mail sm" href="${mail('Status Pesanan '+o.id,'Halo Admin, mohon info status pesanan '+o.id+' ('+o.svc+'). Terima kasih.')}">Email</a></div></div>`}).join('')||'<div class="card mut">Belum ada pesanan. <a href="#" onclick="go(\'ajukan\');return false">Ajukan sekarang</a></div>'}`}
+function kontak(){const pre=db.kontakTpl;
+return`<div class="sec" style="margin-top:0"><h2>Hubungi Kami</h2>${contactBox()}</div><div class="sec"><h2>Teks Chat Siap Kirim</h2>${pre.map(t=>`<div class="card" style="margin-bottom:8px">${esc(t)}<div class="acts"><a class="btn wa sm" target="_blank" href="${walink(db.wa1,t)}">WA 1</a><a class="btn wa sm" target="_blank" href="${walink(db.wa2,t)}">WA 2</a><a class="btn mail sm" href="${mail('Konsultasi Perizinan',t)}">Email</a></div></div>`).join('')}</div>`}
+function akun(){if(cur){const u=db.users.find(x=>x.u===cur)||{};return`<div class="card"><div class="ic">👤</div><h2 class="serif" style="color:var(--g1)">${greet()}, ${esc(who())}!</h2><p class="mut">Username: <b>${esc(cur)}</b> · HP: ${esc(u.hp||'-')}</p><div class="acts"><button class="btn" onclick="go('pesanan')">Pesanan Saya</button><button class="btn gold" onclick="go('ajukan')">Ajukan Baru</button><button class="btn mail" onclick="cur='';localStorage.pl_user='';go('home')">Keluar</button></div></div>`}
+return`<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))"><div class="card"><h2 class="serif" style="color:var(--g1);margin-bottom:8px">Masuk</h2><label>Username</label><input id="lu"><label>Password</label><input id="lp" type="password" onkeydown="if(event.key=='Enter')login()"><button class="btn" onclick="login()">Masuk</button></div><div class="card"><h2 class="serif" style="color:var(--g1);margin-bottom:8px">Daftar Baru</h2><label>Nama Lengkap</label><input id="rn"><label>No. HP</label><input id="rh" type="tel"><label>Username</label><input id="ru"><label>Password (min 4)</label><input id="rp" type="password"><button class="btn gold" onclick="reg()">Daftar</button></div></div>`}
+async function login(){await cloudSync();const u=$('#lu').value.trim().toLowerCase(),p=$('#lp').value;db=load();const x=db.users.find(a=>a.u===u&&a.pw===p);if(!x)return toast('Username/password salah');cur=u;localStorage.pl_user=u;toast(greet()+', '+x.nama+'!');go('home')}
+async function reg(){await cloudSync();const u=$('#ru').value.trim().toLowerCase(),p=$('#rp').value,n=$('#rn').value.trim(),h=$('#rh').value.trim();if(!/^[a-z0-9_]{3,}$/.test(u))return toast('Username min 3 huruf/angka');if(p.length<4||!n)return toast('Lengkapi data');db=load();if(db.users.find(a=>a.u===u)||db.admins[u])return toast('Username sudah dipakai');db.users.push({u,pw:p,nama:n,hp:h,ts:Date.now(),at:nowStr()});save();cur=u;localStorage.pl_user=u;toast('Pendaftaran berhasil, '+n+'!');go('home')}
+let clog=[],typing=0;
+function toggleChat(){const p=$('#chatp');p.style.display=p.style.display==='block'?'none':'block';chat()}
+function botReply(t){t=t.toLowerCase();const m=db.quick.find(x=>x.k.toLowerCase().split(',').some(w=>w.trim()&&t.includes(w.trim())));return m?m.a:db.fallback}
+function reply(q,a){clog.push({t:q});typing=1;chat();setTimeout(()=>{clog.push({b:1,t:a,h:q});typing=0;chat()},650)}
+function askQ(i){reply(db.quick[i].q,db.quick[i].a)}
+function sendC(){const v=$('#cm').value.trim();if(!v)return;$('#cm').value='';reply(v,botReply(v))}
+function chat(){const old=($('#cm')||{}).value||'';if(!clog.length)clog=[{b:1,t:db.hello}];
+$('#chatp').innerHTML=`<div class="ch"><b>⚡ Balas Cepat Otomatis</b><div style="font-size:12px;color:#bfe0d8">Dijawab otomatis, bisa lanjut ke admin</div></div><div class="cb"><div id="cbody">${clog.map(m=>`<div class="bub ${m.b?'bot':'me'}">${esc(m.t)}</div>${m.b&&m.h?`<div class="acts" style="margin:-2px 0 8px"><a class="btn wa sm" target="_blank" href="${walink(db.wa1,'Halo Admin PRATAMA LEGAL, saya tanya: '+m.h)}">Lanjut WA 1</a><a class="btn wa sm" target="_blank" href="${walink(db.wa2,'Halo Admin PRATAMA LEGAL, saya tanya: '+m.h)}">WA 2</a><a class="btn mail sm" href="${mail('Pertanyaan',m.h)}">Email</a></div>`:''}`).join('')}${typing?'<div class="bub bot mut">mengetik…</div>':''}</div><div class="qch">${db.quick.map((x,i)=>`<button onclick="askQ(${i})">${esc(x.q)}</button>`).join('')}</div><textarea id="cm" style="min-height:54px;font-family:inherit" placeholder="Ketik pertanyaan…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendC()}">${esc(old)}</textarea><div class="acts"><button class="btn sm" onclick="sendC()">Kirim</button><button class="btn wa sm" onclick="cs(1)">WA 1</button><button class="btn wa sm" onclick="cs(2)">WA 2</button><button class="btn mail sm" onclick="cs(3)">Email</button></div></div>`;
+const b=$('#cbody');if(b)b.scrollTop=b.scrollHeight}
+function cs(n){const t=$('#cm').value||db.tpl;if(n==3)location.href=mail('Konsultasi Perizinan',t);else window.open(walink(n==1?db.wa1:db.wa2,t),'_blank')}
+render();
+cloudStart();
+</script>
+</body>
+</html>
